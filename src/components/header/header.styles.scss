@@ -1,3 +1,5 @@
+$linkColor: black;
+
 .header {
   height: 70px;
   width: 100%;
@@ -19,10 +21,16 @@
     justify-content: flex-end;
 
     .option {
+      color: $linkColor;
       padding: 10px 15px;
       cursor: pointer;
       text-transform: uppercase;
       font-weight: 300;
+      text-decoration: none;
+
+      &:visited {
+        color: $linkColor;
+      }
     }
 
     .basket {
