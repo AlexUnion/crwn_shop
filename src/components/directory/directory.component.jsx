@@ -12,10 +12,17 @@ function Directory() {
                     id,
                     imageUrl,
                     title,
-                    size
-                                   }) => (
-                <MenuItem key={id} title={title} url={imageUrl} size={size}/>
-                ))
+                    size,
+                    linkUrl,}) => {
+
+                    return <MenuItem
+                        key={id}
+                        title={title}
+                        url={imageUrl}
+                        size={size}
+                        linkUrl={linkUrl}/>
+
+                })
             }
         </div>
     )
